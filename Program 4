@@ -1,0 +1,16 @@
+\\WAP to calucate the distance between two points in the same plane through euclied's theorem.
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float x1, x2,y1, y2, distance, r;
+    printf("Enter the x-cordinates of point1 and point2=");
+    scanf("%f%f",&x1,&x2);
+    printf("Enter the y-cordinates of point1 and point2=");
+    scanf("%f%f",&y1,&y2);
+    r=pow(x2-x2,2)+pow(y2-y1,2);
+    distance= sqrt(r);
+    printf("The distance between two points=%f",distance);
+    return 0;
+
+}
