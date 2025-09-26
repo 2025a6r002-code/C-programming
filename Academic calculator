@@ -1,0 +1,29 @@
+\\WAP to calculate total marks, percentage and average marks of five subjects.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int English;
+    int Mathematics;
+    int Science;
+    int Computer;
+    int History;
+    int Total_marks;
+    float Average_marks;
+    float Percentage;
+    scanf("%d%d%d%d%d",&English,&Mathematics,&Science,&Computer,&History);
+        Total_marks= English+Mathematics+Science+Computer+History;
+        Average_marks= Total_marks/5;
+        Percentage= (Total_marks*100/500);
+        scanf("%d",&Total_marks);
+        scanf("%f",&Average_marks);
+        scanf("%f",&Percentage);
+    printf("%d %.2f %.2f",Total_marks,Average_marks,Percentage);
+    
+        
+    return 0;
+}
