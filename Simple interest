@@ -1,0 +1,18 @@
+//WAP to calculate simple interest.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   int P;
+    float R,T,SI;
+    scanf("%d",&P);
+    scanf("%f%f",&R,&T);
+    
+    SI= (P*R*T)/100;
+    printf("%.2f",SI);
+    
+    return 0;
+}
