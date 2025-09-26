@@ -1,0 +1,15 @@
+\\WAP to convert celsius into fahrenheit.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float t,fa;
+    scanf("%f",&t);
+    fa= (t*1.8)+32;
+    printf("%.2f", fa);
+  
+    return 0;
+}
