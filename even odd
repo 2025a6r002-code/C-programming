@@ -7,3 +7,20 @@ int main(){
     (num%2==0)? printf("%d is even",num):printf("%d is odd",num);
     return 0;
 }
+
+// using if-else
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N;
+    scanf("%d",&N);
+    if (N%2==0)
+        printf("Even");
+        else 
+            printf("Odd");
+    return 0;
+}
