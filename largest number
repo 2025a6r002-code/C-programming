@@ -1,0 +1,37 @@
+//WAP to find the larger out of two numbers
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int A, B;
+    scanf("%d%d",&A,&B);
+    if (A>B)
+        printf("%d",A);
+        else if (B>A)
+            printf("%d",B);
+            else 
+                printf("%d",A);
+    
+    return 0;
+}
+
+//WAP to find greater out of three numbers.
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int A,B,C;
+    scanf("%d%d%d",&A,&B,&C);
+    if ( (A>=B) && (A>=C))
+        printf("%d",A);
+    else if ((B>=A)&&(B>=C))
+        printf("%d",B);
+    else
+        printf("%d",C);
+    return 0;
+}
