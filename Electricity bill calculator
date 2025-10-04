@@ -1,0 +1,38 @@
+//WAP to that takes the number of units consumed and prints the total electricity bill.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   int a;
+    float t,s,b,c, surcharge;
+    scanf("%d",&a);
+    if (a<=50){
+      t=a*0.50 ;
+     
+    }
+    else if ((a<=150)&&(a>50))
+    {
+        s=a-50;
+        t=(50*0.50)+(s*0.75);
+        
+    }
+    else if ((a<=250)&&(a>150)){
+        b=a-150;
+        t=(50*0.50)+(100*0.75)+(b*1.20);
+       
+    }
+    
+    else {
+    
+       c =a-250;
+       t =(50*0.50)+(100*0.75)+(100*1.20)+(c*1.50);
+        
+    }
+    surcharge=t*0.20;
+    t=t+surcharge;
+    printf("%.2f",t);
+    return 0;
+}
