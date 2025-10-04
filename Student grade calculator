@@ -1,0 +1,31 @@
+//WAP to calculate percentage and assign them their marks.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int p,ch,b,m,c;
+    double per;
+    scanf("%d",&p);
+    scanf("%d",&c);
+    scanf("%d",&ch);
+    scanf("%d",&b);
+    scanf("%d",&m);
+    per=(p+c+ch+b+m)/5.0;
+    printf("Percentage = %.2f\n",per);
+    if (per>=90)
+        printf("Grade = A");
+    else if ((per>=80) && (per<90))
+        printf("Grade = B");
+    else if ((per>=70) && (per<80))
+        printf("Grade = C");    
+    else if ((per>=60) && (per<70))
+        printf("Grade = D");   
+    else if ((per>=40) && (per<60))      
+        printf("Grade = E"); 
+    else 
+        printf("Grade = F");         
+   return 0;
+}
