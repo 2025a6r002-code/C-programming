@@ -1,0 +1,25 @@
+//WAP to find the sum of all digits of an integer.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N,sum,a;
+    scanf("%d", &N);
+    if (N>=0 && N<=9){
+        printf("%d", N);
+    }
+    else
+    {
+      sum=0;
+      while (N>0){
+       a = N%10;
+       N=N/10;
+       sum=sum+a;
+       };
+    printf("%d",sum);
+    }
+    return 0;
+}
