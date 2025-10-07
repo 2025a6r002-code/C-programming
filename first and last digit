@@ -1,0 +1,24 @@
+//WAP to print first and last digit of a number.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N,j,k;
+    scanf("%d",&N);
+    if ((N>=0) && (N<=9)){
+        k= j= N;
+    }
+    else{
+    j= N%10;
+    N=N/10;
+    while(N != 0){
+        k=N%10;
+        N=N/10;
+    }
+    }
+    printf("%d %d",k ,j);
+    return 0;
+}
