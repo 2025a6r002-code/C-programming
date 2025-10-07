@@ -1,0 +1,22 @@
+//WAP to count the number of digits in a number.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N,n=0;
+    scanf("%d",&N);
+    if(N==0){
+        n=1;
+    }
+    else{
+    while (N>0) {
+        N=N/10;
+        n++;
+    }
+    }
+    printf("%d",n);
+    return 0;
+}
